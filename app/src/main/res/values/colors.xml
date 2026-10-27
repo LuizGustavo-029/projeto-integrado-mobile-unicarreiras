@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_dark">#0F1E45</color>
+    <color name="navy_mid">#1E3A78</color>
+    <color name="navy_light">#2F5AAE</color>
+    <color name="blue_accent">#2C4E9C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="field_bg">#F1F3F8</color>
+    <color name="field_border">#E3E7F0</color>
+    <color name="text_primary">#16233F</color>
+    <color name="text_secondary">#8993A8</color>
+    <color name="text_label">#5B6478</color>
+    <color name="link_blue">#2F5AAE</color>
+    <color name="divider">#E4E7EE</color>
+    <color name="social_border">#E3E7F0</color>
+    <color name="progress_track">#DCE1EC</color>
+</resources>
