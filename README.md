@@ -14,12 +14,17 @@ O banco de dados já modela o sistema completo: estudantes, empresas, administra
 
 ## Equipe
 
-| Nome | Função | GitHub |
-| --- | --- | --- |
-| Luiz Gustavo | _(preencher: ex.: Tech Lead)_ | [@LuizGustavo-029](https://github.com/LuizGustavo-029) |
-| _(nome)_ | _(função)_ | _(link)_ |
-| _(nome)_ | _(função)_ | _(link)_ |
-| _(nome)_ | _(função)_ | _(link)_ |
+| Nome | Função |
+| --- | --- |
+| Michael de Jesus | Gerente de projetos |
+| Luiz Gustavo | Líder técnico |
+| Daniel Avelino | Desenvolvedor |
+| Rafael Gomes | Desenvolvedor |
+| Davi Fernandes | Desenvolvedor |
+| Marcos Henrique | Desenvolvedor |
+| Alexandre Viana | Desenvolvedor |
+| Miguel Teixeira | Desenvolvedor |
+| Gabriel Teixeira | Desenvolvedor |
 
 ## Tecnologias
 
