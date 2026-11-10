@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banco de talentos"
+                    style="@style/T.Eyebrow" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alunos e egressos"
+                    style="@style/T.H1"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:elevation="2dp"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etBusca"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="Buscar aluno, curso ou habilidade"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_filter"
+                    android:contentDescription="@null"
+                    android:tint="@color/navy"
+                    android:id="@+id/btnFiltro"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:padding="16dp"
+                    android:layout_marginEnd="12dp">
+                    <FrameLayout
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_tile">
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_users"
+                            android:contentDescription="@null"
+                            android:tint="@color/navy"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="312"
+                        style="@style/T.Number"
+                        android:textSize="22sp"
+                        android:layout_marginTop="14dp"
+                        android:id="@+id/tvDisponiveis" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alunos disponíveis"
+                        style="@style/T.Small"
+                        android:textSize="12sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:padding="16dp">
+                    <FrameLayout
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_tile">
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/ic_book"
+                            android:contentDescription="@null"
+                            android:tint="@color/navy"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="84"
+                        style="@style/T.Number"
+                        android:textSize="22sp"
+                        android:layout_marginTop="14dp"
+                        android:id="@+id/tvFormandos" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Formandos em 2025"
+                        style="@style/T.Small"
+                        android:textSize="12sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_tabs"
+                android:padding="4dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Disponíveis"
+                    style="@style/T.Tab"
+                    android:id="@+id/tabDisponiveis"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tab_selected"
+                    android:textColor="@color/ink"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Encaminhados"
+                    style="@style/T.Tab"
+                    android:id="@+id/tabEncaminhados"
+                    android:layout_weight="1"
+                    android:textColor="@color/muted"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="Contratados"
+                    style="@style/T.Tab"
+                    android:id="@+id/tabContratados"
+                    android:layout_weight="1"
+                    android:textColor="@color/muted"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card_navy"
+                android:padding="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taxa de empregabilidade"
+                        android:textSize="13sp"
+                        android:textColor="@color/white_70" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="67%"
+                        android:fontFamily="@font/outfit_bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/tvTaxa" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+8% neste semestre"
+                        android:fontFamily="@font/outfit_bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/green_light"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvDelta" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meta institucional: 75%"
+                        android:textSize="11sp"
+                        android:textColor="@color/white_70"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvMeta" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llAlunos" />
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/nav_recrutador" />
+</LinearLayout>

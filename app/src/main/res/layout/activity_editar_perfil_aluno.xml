@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <FrameLayout
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_card"
+                    android:id="@+id/btnVoltar"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_left"
+                        android:contentDescription="@null"
+                        android:tint="@color/navy"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Editar perfil"
+                    style="@style/T.H1"
+                    android:textSize="22sp"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tvTituloTela" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOME COMPLETO"
+                style="@style/T.Label"
+                android:layout_marginTop="18dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_user"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etNome"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="Seu nome completo"
+                    android:inputType="textPersonName|textCapWords" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNIVERSIDADE"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_building"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etUniversidade"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="Universidade de São Paulo"
+                    android:inputType="textCapWords" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURSO"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_book"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etCurso"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="Engenharia de Computação"
+                    android:inputType="textCapWords" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEMESTRE ATUAL"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_calendar"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etSemestre"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="6"
+                    android:inputType="number" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TELEFONE"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_user"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etTelefone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="(11) 90000-0000"
+                    android:inputType="phone" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LINKEDIN"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_briefcase"
+                    android:contentDescription="@null"
+                    android:tint="@color/muted" />
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etLinkedin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:hint="linkedin.com/in/seu-perfil"
+                    android:inputType="textUri" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOBRE MIM"
+                style="@style/T.Label"
+                android:layout_marginTop="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:layout_marginTop="8dp">
+                <EditText
+                    style="@style/T.Input"
+                    android:id="@+id/etSobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Conte um pouco sobre você"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:singleLine="false"
+                    android:minLines="4"
+                    android:gravity="top"
+                    android:maxLines="8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginTop="22dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Competências"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/ink"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <com.estagiopro.app.widget.FlowLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hGap="8dp"
+                    app:vGap="8dp"
+                    android:id="@+id/flSkills"
+                    android:layout_marginTop="14dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="14dp">
+                    <EditText
+                        style="@style/T.Input"
+                        android:id="@+id/etNovaSkill"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:hint="Nova competência"
+                        android:inputType="textCapWords"
+                        android:imeOptions="actionDone" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adicionar"
+                        style="@style/T.Link"
+                        android:id="@+id/btnAddSkill"
+                        android:padding="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="18dp"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Currículo (PDF)"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/ink"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_input"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/btnAnexarCv"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+                    <FrameLayout
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/bg_card">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_file"
+                            android:contentDescription="@null"
+                            android:tint="@color/blue"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nenhum arquivo anexado"
+                            style="@style/T.Name"
+                            android:textSize="13sp"
+                            android:id="@+id/tvCvNome" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Toque para anexar um PDF"
+                            style="@style/T.Small"
+                            android:textSize="11sp"
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/tvCvInfo" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remover currículo"
+                    style="@style/T.Link"
+                    android:id="@+id/btnRemoverCv"
+                    android:layout_marginTop="12dp"
+                    android:padding="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_btn_gradient"
+                android:id="@+id/btnSalvar"
+                android:elevation="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salvar alterações"
+                    style="@style/T.Button" />
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_check"
+                    android:contentDescription="@null"
+                    android:tint="@color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/bg_btn_outline"
+                android:id="@+id/btnAlterarSenha"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginTop="12dp">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_lock"
+                    android:contentDescription="@null"
+                    android:tint="@color/navy"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alterar senha"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/navy" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

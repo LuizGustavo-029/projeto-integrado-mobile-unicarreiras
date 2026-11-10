@@ -33,11 +33,3 @@ google-services.json
 
 # Android Profiling
 *.hprof
-
-# Android Studio (em qualquer pasta)
-.idea/
-*.iml
-
-# PHP
-/vendor/
-*.log
