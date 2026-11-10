@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.estagiopro'
+    namespace 'com.estagiopro.app'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.estagiopro"
-        minSdk 24
+        applicationId "com.estagiopro.app"
+        minSdk 26
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -17,9 +17,9 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -28,8 +28,4 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_tile">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_briefcase"
+                android:contentDescription="@null"
+                android:tint="@color/navy"
+                android:layout_gravity="center" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio em Product Design"
+                android:fontFamily="@font/outfit_semibold"
+                android:textSize="14sp"
+                android:textColor="@color/ink"
+                android:id="@+id/tvTitle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="São Paulo · Híbrido"
+                style="@style/T.Small"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tvSub" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ativa"
+            style="@style/T.Badge.Green"
+            android:id="@+id/tvBadge" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_line"
+        android:layout_marginTop="14dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:fontFamily="@font/inter_semibold"
+                android:textSize="13sp"
+                android:textColor="@color/ink"
+                android:id="@+id/tvCands" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="candidatos"
+                android:textSize="13sp"
+                android:textColor="@color/muted"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="146"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="13sp"
+            android:textColor="@color/ink"
+            android:id="@+id/tvViews" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="visualizações"
+            android:textSize="13sp"
+            android:textColor="@color/muted"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+</LinearLayout>

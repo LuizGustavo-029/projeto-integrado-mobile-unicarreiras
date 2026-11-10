@@ -1,9 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.EstagioPro" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/navy_mid</item>
-        <item name="colorPrimaryDark">@color/navy_dark</item>
-        <item name="android:windowBackground">@color/white</item>
-        <item name="android:statusBarColor">@color/navy_dark</item>
+    <!-- Títulos -->
+    <style name="T.H1" parent="">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="T.H1.White">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="T.H2" parent="">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="T.CardTitle" parent="">
+        <item name="android:fontFamily">@font/outfit_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="T.Name" parent="">
+        <item name="android:fontFamily">@font/outfit_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <style name="T.Number" parent="">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+    <!-- Textos -->
+    <style name="T.Eyebrow" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="T.Body" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="T.Small" parent="">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="T.Label" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/label</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="T.Link" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="T.Chip" parent="">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="T.ChipDark" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/chip_dark_text</item>
+        <item name="android:background">@drawable/bg_chip_dark</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="T.Skill" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chip_dark_text</item>
+        <item name="android:background">@drawable/bg_chip_dark</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+    </style>
+    <style name="T.Badge" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/green_text</item>
+        <item name="android:background">@drawable/bg_badge_green</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="T.Badge.Green">
+        <item name="android:textColor">@color/green_text</item>
+        <item name="android:background">@drawable/bg_badge_green</item>
+    </style>
+    <style name="T.Badge.Orange">
+        <item name="android:textColor">@color/orange_text</item>
+        <item name="android:background">@drawable/bg_badge_orange</item>
+    </style>
+    <style name="T.Badge.Blue">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@drawable/bg_badge_blue</item>
+    </style>
+    <style name="T.Input" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/placeholder</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+    <style name="T.Nav" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+    <style name="T.Tab" parent="">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="T.Button" parent="">
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

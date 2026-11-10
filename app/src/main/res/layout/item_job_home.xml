@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:layout_marginTop="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_avatar_navy">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LU"
+            android:fontFamily="@font/outfit_bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/tvAvatar" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lumina"
+            style="@style/T.Body"
+            android:textSize="12sp"
+            android:id="@+id/tvCompany" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estágio em Product Design"
+            android:fontFamily="@font/outfit_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/ink"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tvTitle" />
+        <com.estagiopro.app.widget.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hGap="6dp"
+            app:vGap="6dp"
+            android:id="@+id/flChips"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_chevron_right"
+        android:contentDescription="@null"
+        android:tint="@color/muted" />
+</LinearLayout>

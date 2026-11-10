@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mostrar mais"
+    style="@style/T.Link"
+    android:textSize="13sp"
+    android:gravity="center"
+    android:paddingVertical="14dp"
+    android:id="@+id/btnMore"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground" />

@@ -1,18 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="20dp"
-    android:height="20dp"
-    android:viewportWidth="48"
-    android:viewportHeight="48">
-    <path
-        android:fillColor="#4285F4"
-        android:pathData="M45.12,24.5c0,-1.56 -0.14,-3.06 -0.4,-4.5H24v8.51h11.84c-0.51,2.75 -2.06,5.08 -4.39,6.64v5.52h7.11C42.71,36.87 45.12,31.19 45.12,24.5z" />
-    <path
-        android:fillColor="#34A853"
-        android:pathData="M24,46c5.94,0 10.92,-1.97 14.56,-5.33l-7.11,-5.52c-1.97,1.32 -4.49,2.1 -7.45,2.1 -5.73,0 -10.58,-3.87 -12.31,-9.07H4.34v5.7C7.96,41.07 15.4,46 24,46z" />
-    <path
-        android:fillColor="#FBBC05"
-        android:pathData="M11.69,28.18C11.25,26.86 11,25.45 11,24s0.25,-2.86 0.69,-4.18v-5.7H4.34C2.85,17.09 2,20.45 2,24s0.85,6.91 2.34,9.88l7.35,-5.7z" />
-    <path
-        android:fillColor="#EA4335"
-        android:pathData="M24,10.75c3.23,0 6.13,1.11 8.41,3.29l6.31,-6.31C34.91,4.18 29.93,2 24,2 15.4,2 7.96,6.93 4.34,14.12l7.35,5.7c1.73,-5.2 6.58,-9.07 12.31,-9.07z" />
+    android:width="18dp" android:height="18dp" android:viewportWidth="18" android:viewportHeight="18">
+    <path android:fillColor="#4285F4" android:pathData="M17.64,9.2c0,-0.637 -0.057,-1.251 -0.164,-1.84H9v3.481h4.844a4.14,4.14 0,0 1,-1.796 2.716v2.259h2.908c1.702,-1.567 2.684,-3.875 2.684,-6.615z" />
+    <path android:fillColor="#34A853" android:pathData="M9,18c2.43,0 4.467,-0.806 5.956,-2.18l-2.908,-2.259c-0.806,0.54 -1.837,0.86 -3.048,0.86 -2.344,0 -4.328,-1.584 -5.036,-3.711H0.957v2.332A8.997,8.997 0,0 0,9 18z" />
+    <path android:fillColor="#FBBC05" android:pathData="M3.964,10.71A5.41,5.41 0,0 1,3.682 9c0,-0.593 0.102,-1.17 0.282,-1.71V4.958H0.957A8.996,8.996 0,0 0,0 9c0,1.452 0.348,2.827 0.957,4.042l3.007,-2.332z" />
+    <path android:fillColor="#EA4335" android:pathData="M9,3.58c1.321,0 2.508,0.454 3.44,1.345l2.582,-2.58C13.463,0.891 11.426,0 9,0A8.997,8.997 0,0 0,0.957 4.958L3.964,7.29C4.672,5.163 6.656,3.58 9,3.58z" />
 </vector>
